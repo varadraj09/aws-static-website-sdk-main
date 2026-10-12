@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS Static Website Hosting | Capstone Project</title>
+
+    <meta name="description"
+          content="AWS Static Website Hosting using Amazon S3, Python and boto3.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                AWS<span>Cloud</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#deployment">Deployment</a>
+                <a href="#technologies">Technologies</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                AWS CAPSTONE PROJECT
+            </div>
+
+            <h1>
+                Automated Static Website
+                <span>Hosting on AWS</span>
+            </h1>
+
+            <p class="hero-description">
+                A professional static website automatically deployed to
+                Amazon S3 using Python and the AWS SDK for Python
+                (boto3).
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#deployment" class="btn primary">
+                    View Deployment
+                </a>
+
+                <a href="#architecture" class="btn secondary">
+                    View Architecture
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="terminal">
+                <p><span class="green">$</span> python deploy.py</p>
+                <p class="success">✓ Bucket configured</p>
+                <p class="success">✓ Website hosting enabled</p>
+                <p class="success">✓ Files uploaded</p>
+                <p class="success">✓ Deployment successful</p>
+                <p><span class="green">$</span> status: <strong>LIVE</strong></p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-heading">
+            <span>01</span>
+            <h2>Project Overview</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div>
+                <h3>What is this project?</h3>
+
+                <p>
+                    This project demonstrates automated static website
+                    hosting using Amazon Web Services. The website files
+                    are stored in Amazon S3 and deployed automatically
+                    using a Python script built with boto3.
+                </p>
+
+                <p>
+                    Instead of manually uploading files through the AWS
+                    Management Console, the deployment process is
+                    automated using the AWS SDK for Python.
+                </p>
+            </div>
+
+            <div class="info-card">
+
+                <div class="info-row">
+                    <span>Project</span>
+                    <strong>AWS Static Website Hosting</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Cloud Provider</span>
+                    <strong>Amazon Web Services</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Storage</span>
+                    <strong>Amazon S3</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Automation</span>
+                    <strong>Python + boto3</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Region</span>
+                    <strong>ap-south-1</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Status</span>
+                    <strong class="live">● LIVE</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Architecture -->
+    <section id="architecture" class="section dark-section">
+
+        <div class="section-heading">
+            <span>02</span>
+            <h2>Architecture</h2>
+        </div>
+
+        <div class="architecture">
+
+            <div class="architecture-node">
+                <div class="node-icon">💻</div>
+                <h3>Developer</h3>
+                <p>Website source files</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="architecture-node">
+                <div class="node-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Deployment automation</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="architecture-node">
+                <div class="node-icon">☁</div>
+                <h3>Amazon S3</h3>
+                <p>Object storage</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="architecture-node">
+                <div class="node-icon">🌐</div>
+                <h3>Website</h3>
+                <p>Public web access</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Deployment -->
+    <section id="deployment" class="section">
+
+        <div class="section-heading">
+            <span>03</span>
+            <h2>How I Host This Website</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+
+                <div>
+                    <h3>Create / Identify S3 Bucket</h3>
+
+                    <p>
+                        The Python deployment script connects to Amazon S3
+                        and identifies the bucket used to host the website.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">02</div>
+
+                <div>
+                    <h3>Configure Public Access</h3>
+
+                    <p>
+                        The deployment script configures the required
+                        S3 public access settings and bucket policy
+                        for website content.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">03</div>
+
+                <div>
+                    <h3>Enable Static Website Hosting</h3>
+
+                    <p>
+                        Amazon S3 is configured to use
+                        <strong>index.html</strong> as the website's
+                        default page.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">04</div>
+
+                <div>
+                    <h3>Upload Website Files</h3>
+
+                    <p>
+                        Python scans the website directory and uploads
+                        the HTML and CSS files to the S3 bucket with
+                        appropriate content types.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">05</div>
+
+                <div>
+                    <h3>Access the Website</h3>
+
+                    <p>
+                        Once deployment is complete, the website can be
+                        accessed through the Amazon S3 hosted website
+                        endpoint or S3 object endpoint.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technologies -->
+    <section id="technologies" class="section dark-section">
+
+        <div class="section-heading">
+            <span>04</span>
+            <h2>Technologies Used</h2>
+        </div>
+
+        <div class="technology-grid">
+
+            <div class="technology-card">
+                <div class="technology-icon">☁</div>
+                <h3>Amazon S3</h3>
+                <p>
+                    Used for storing website files and serving
+                    static web content.
+                </p>
+            </div>
+
+
+            <div class="technology-card">
+                <div class="technology-icon">🐍</div>
+                <h3>Python</h3>
+                <p>
+                    Used to automate the complete website
+                    deployment workflow.
+                </p>
+            </div>
+
+
+            <div class="technology-card">
+                <div class="technology-icon">⚙</div>
+                <h3>boto3</h3>
+                <p>
+                    AWS SDK for Python used to interact with
+                    Amazon S3 programmatically.
+                </p>
+            </div>
+
+
+            <div class="technology-card">
+                <div class="technology-icon">🌐</div>
+                <h3>HTML & CSS</h3>
+                <p>
+                    Used to build the responsive frontend
+                    displayed by the S3 hosted website.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Deployment Status -->
+    <section class="status-section">
+
+        <div class="status-content">
+
+            <div>
+                <div class="status-label">
+                    DEPLOYMENT STATUS
+                </div>
+
+                <h2>
+                    Website is successfully deployed.
+                </h2>
+
+                <p>
+                    The application is hosted using Amazon S3 and
+                    deployed through Python automation.
+                </p>
+            </div>
+
+            <div class="status-badge">
+                <span>●</span>
+                LIVE
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>AWS Static Website Hosting</h3>
+
+                <p>
+                    AWS Capstone Project
+                </p>
+            </div>
+
+            <div class="footer-tech">
+                S3 &nbsp;•&nbsp; Python &nbsp;•&nbsp; boto3
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 AWS Capstone Project. Built and deployed on AWS.
+        </div>
+
+    </footer>
+
+</body>
+</html>
